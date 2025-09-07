@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bobson Lahai - Portfolio</title>
-    <link rel="stylesheet"
-href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bobson's Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header / Home Section-->
-     <Header>
-        <hi>Hi, I'm <span class="highlight">Bobson Lahai</span></hi>
-           <p>Web Developer /  Software Developer  / Tech  Enthusiast</p>
-              <a href="#contact" class="btn"> Hire Me</a>></a>
-     </Header>
-     <!--About Section-->
-     <section id="about"></section>
-     <h2>About Me</h2>
-     <p>
-        I'm Bobson, a passionate web designer and software developer with Deploma in Software and Certificate in Website Design.
-        I love creating simple, clean, and user-friendly websites for students, businesses, and organizations
-     </p>
-     <!--Services Section-->
-     <section id="Services">
-        <h2>My Services</h2>
-        <ul>
-            <li>Website Design & Development</li>
-            <li>Computer Tutoring(Basic IT skills)</li>
-            <li>Graphic Design (Posters,Flyers,Social Media Ads)</li>
-            <li>Assignment Formatting & Tech Support</li>     
-           </ul>
-           </section>
-           <!--Portfolio Section-->
-           <Section id="Portfolio">
-           <h2>My Work</h2>
-           <p> Coming soon!</p>
-           <div class="card">Demo Project 1</div>
-           <div class="card">Demo Project 2</div>
-           <div class="card">Demo Project 3></div>
-                </Section>
-                <!--Contact Section-->
-                <section id="Contact">
-                    <h2>Contact Me></h2>
-                    <p>whatsApp:<a href="https://wa.me/23234722734">+232 034 722 734</a></p>
-                    <p>Email:lahaiaugustine225@gmail.com</p>
-                    <p>Facebook: <a href="#">Facebook.com/Augustine Lahai</a></p>
-                </section>
-                <!--Footer-->
-                <footer>
-                    <p>2025 Bobson Lahai/All Rights Reserved</p>
-                </footer>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Bobson</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#projects" class="dropbtn">Projects ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to <span>Bobson's</span> Classic Website</h1>
+    <p>A creative web designer & developer from Sierra Leone.</p>
+    <a href="#about" class="btn">Learn More</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Bobson. I hold a diploma in software and a certificate in web design.  
+      I love building websites and software that solve real problems and look professional.  
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">🌐 Portfolio Website</div>
+      <div class="project-card">💻 Software Tools</div>
+      <div class="project-card">📱 Mobile Apps</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:lahaiaugustine225@gmail.com">lahaiaugustine225@gmail.com</a></p>
+    <p>WhatsApp: +232-034-722-734</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Bobson. All rights reserved.</p>
+  </footer>
 </body>
 </html>
