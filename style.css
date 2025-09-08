@@ -150,3 +150,21 @@ footer {
   }
 }
 
+/* Nested dropdown */
+.dropdown-content .dropdown {
+  position: relative;
+}
+
+.dropdown-content .dropdown-content {
+  left: 100%;
+  top: 0;
+  position: absolute;
+  display: none;
+}
+
+.dropdown-content .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
