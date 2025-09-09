@@ -1,155 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bobson – Web Developer | Colorful Portfolio</title>
-  <meta name="description" content="Bobson's colorful, modern portfolio with sponsorships, affiliate picks, ethical ads, and easy contact." />
-  <meta name="theme-color" content="#6a5cff" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Augustine Lahai — Web Developer & Student | Portfolio</title>
+  <meta name="description" content="Augustine Lahai — colorful portfolio: web & software, graphic design, Python, private IT classes. Sponsorship & monetization ready." />
+  <meta name="theme-color" content="#7b61ff" />
 
-  <!-- Google AdSense: replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google AdSense (replace with your publisher ID) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
+
+  <!-- Simple SEO / Social -->
+  <meta property="og:title" content="Augustine Lahai — Web Developer & Student" />
+  <meta property="og:description" content="Portfolio of Augustine Lahai. Services: websites, software, graphics, Python, private IT classes. Sponsorship & monetization opportunities." />
 </head>
 <body>
-  <!-- HEADER / NAV -->
-  <header class="header">
-    <div class="container nav">
-      <a class="brand" href="index.html">Bobson<span>.dev</span></a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
-      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">☰</label>
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="services.html">Services</a>
-        <a href="sponsorship.html">Sponsorship</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h1> Welcome to Bobson's <span class="accent">Website</span></h1>
-        <p>I’m <strong>Bobson</strong>, a web developer. I build fast, attractive websites and set up ways for you to <em>earn while people view</em> — ads, sponsorships, affiliates, and donations.</p>
-        <div class="cta-row">
-          <a href="services.html" class="btn btn-primary">Hire Me</a>
-          <a href="sponsorship.html" class="btn btn-ghost">Sponsor a Placement</a>
+  <!-- Site wrapper -->
+  <div class="site">
+
+    <!-- NAV -->
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#home">Augustine<span class="dot">.</span></a>
+
+        <input id="menu-toggle" type="checkbox" class="menu-toggle" aria-label="Toggle menu">
+        <label for="menu-toggle" class="menu-btn" aria-hidden="true">☰</label>
+
+        <nav class="nav">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#sponsorship" class="nav-link">Sponsorship</a>
+          <a href="#contact" class="nav-link cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="home" class="hero-section">
+      <div class="wrap hero-grid">
+        <div class="hero-left">
+          <h1>Hello — I'm <span class="accent">Augustine Lahai</span></h1>
+          <p class="lead">I build beautiful websites, software, and graphics. I teach private IT classes and work with Python. I'm a student from Sierra Leone — I'm building things that earn while people view them: ads, sponsorships, and affiliate partnerships.</p>
+
+          <div class="hero-ctas">
+            <a href="#services" class="btn primary">See Services</a>
+            <a href="#sponsorship" class="btn ghost">Sponsor</a>
+          </div>
+
+          <p class="contact-small">Email: <a href="mailto:lahaiaugustine225@gmail.com">lahaiaugustine225@gmail.com</a> · WhatsApp: <a href="https://wa.me/23234722734" target="_blank" rel="noopener">+23234722734</a></p>
         </div>
-        <p class="tiny">WhatsApp: <a href="https://wa.me/23242722742" target="_blank" rel="noopener">+23242722742</a> · Email: <a href="mailto:lahaiaugustine225@gmail.com">lahaiaugustine225@gmail.com</a></p>
+
+        <aside class="hero-right card-profile">
+          <div class="profile-photo-wrap">
+            <img src="images/profile.jpg" alt="Augustine Lahai profile photo" class="profile-photo">
+          </div>
+          <h3 class="profile-name">Augustine Lahai</h3>
+          <p class="profile-role">Web Developer • Student • Designer</p>
+
+          <ul class="profile-stats">
+            <li><strong>95+</strong><span>projects</span></li>
+            <li><strong>A+</strong><span>accessibility</span></li>
+            <li><strong>SEO</strong><span>optimized</span></li>
+          </ul>
+
+          <!-- small ad slot in hero card -->
+          <div class="ad-slot">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="1111111111"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </div>
+
+        </aside>
       </div>
-      <div class="hero-card">
-        <img src="images/profile.jpg" alt="Bobson profile photo" class="avatar" />
-        <ul class="stats">
-          <li><span>95+</span> Projects</li>
-          <li><span>A+</span> Accessibility</li>
-          <li><span>SEO</span> Optimized</li>
-        </ul>
-        <!-- In-hero ad (responsive) -->
-        <div class="ad">
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+      <!-- bottom wave -->
+      <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,64L60,64C120,64,240,64,360,48C480,32,600,0,720,0C840,0,960,32,1080,42.7C1200,53,1320,43,1380,37.3L1440,32L1440,80L0,80Z"></path>
+      </svg>
+    </main>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="wrap section-grid">
+        <div class="about-left">
+          <h2>About Me</h2>
+          <p class="muted">A little background</p>
+
+          <p>My name is <strong>Augustine Lahai</strong>, a 22 years old student from Sierra Leone. I was the former senior prefect of Abdel Nasser Secondary School (PO BOX 109) in 2019–2020. I studied at Every Nation College, Bo City, and I am currently awaiting to start my Surgery Course this year.</p>
+
+          <p>I love building websites, learning new tech, and helping others through private IT classes. I also design graphics and write Python scripts for small projects. I'm open to sponsorships, collaborations, and paid projects.</p>
+
+          <div class="about-actions">
+            <a href="#portfolio" class="btn outline">View Work</a>
+            <a href="#contact" class="btn primary">Hire / Sponsor</a>
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- Decorative waves -->
-    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,64L60,64C120,64,240,64,360,48C480,32,600,0,720,0C840,0,960,32,1080,42.7C1200,53,1320,43,1380,37.3L1440,32L1440,80L0,80Z"></path></svg>
-  </section>
 
-  <!-- FEATURES -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">What I Do</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Custom Websites</h3>
-          <p>Responsive, fast, and accessible builds with clean code and on-point SEO.</p>
-        </article>
-        <article class="card">
-          <h3>Monetization Setup</h3>
-          <p>AdSense, affiliates, sponsorship pages, and donation widgets done right.</p>
-        </article>
-        <article class="card">
-          <h3>Care & Growth</h3>
-          <p>Maintenance, analytics, newsletters, and content strategy to scale.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+        <div class="about-right card-gloss">
+          <h3>Quick Facts</h3>
+          <ul class="facts">
+            <li><strong>Age:</strong> 22</li>
+            <li><strong>Location:</strong> Sierra Leone</li>
+            <li><strong>School:</strong> Every Nation College (Bo City)</li>
+            <li><strong>Former role:</strong> Senior Prefect — Abdel Nasser Sec School (2019–2020)</li>
+            <li><strong>Goal:</strong> Start Surgery Course this year</li>
+          </ul>
 
-  <!-- BLOG PREVIEW -->
-  <section class="section alt">
-    <div class="container narrow">
-      <h2 class="section-title">Latest Tutorial</h2>
-      <article class="prose">
-        <h3>Deploy a Static Site on GitHub Pages</h3>
-        <p>Get your site online for free in minutes, then add analytics and ad units to start earning.</p>
-        <!-- In-article Ad -->
-        <div class="ad in-article">
-          <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="2222222222"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-        <p>Once you see traffic building, pitch sponsors using your stats and audience profile.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- AFFILIATE + DONATIONS -->
-  <section class="section colorful">
-    <div class="container">
-      <h2 class="section-title">Recommended & Support</h2>
-      <div class="grid three">
-        <a class="pill" href="https://www.amazon.com/dp/PRODUCTID/?tag=YOURTAG-20" target="_blank" rel="sponsored noopener">Laptop for Devs →</a>
-        <a class="pill" href="https://partner.yourhost.com/?ref=YOURREF" target="_blank" rel="sponsored noopener">Affordable Hosting →</a>
-        <a class="pill" href="https://www.udemy.com/course/COURSEID/?couponCode=YOURCODE" target="_blank" rel="sponsored noopener">Web Dev Course →</a>
-      </div>
-      <div class="cta-row center">
-        <a class="btn btn-dark" href="https://www.buymeacoffee.com/YOURNAME" target="_blank" rel="noopener">Buy Me a Coffee</a>
-        <a class="btn btn-outline" href="https://ko-fi.com/YOURNAME" target="_blank" rel="noopener">Ko-fi</a>
-        <a class="btn btn-primary" href="https://github.com/sponsors/YOUR_GITHUB" target="_blank" rel="noopener">GitHub Sponsors</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand footer-brand">Bobson<span>.dev</span></div>
-        <p class="muted">© <span id="year"></span> Bobson. Built with performance and accessibility in mind.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul class="list">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="sponsorship.html">Sponsorship</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul class="list">
-          <li><a href="mailto:lahaiaugustine225@gmail.com">lahaiaugustine225@gmail.com</a></li>
-          <li><a href="https://wa.me/23242722742" target="_blank" rel="noopener">WhatsApp: +23242722734</a></li>
-        </ul>
-        <!-- Sidebar ad -->
-        <div class="ad rectangle">
-          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="3333333333" data-ad-format="rectangle" data-full-width-responsive="false"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          <!-- small sponsor pitch -->
+          <div class="sponsor-cta">
+            <p>Want to sponsor my learning or projects? I offer prominent placements on this site and shoutouts to visitors.</p>
+            <a href="#sponsorship" class="btn ghost">Sponsor a Placement</a>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services-section alt">
+      <div class="wrap">
+        <h2>Services</h2>
+        <p class="muted">Ways I can help — professional & affordable</p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Build Websites</h3>
+            <p>Responsive, fast, and accessible websites: portfolios, landing pages, small business sites, and GitHub Pages deployments.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Software</h3>
+            <p>Small desktop & web tools, scripts to automate tasks, and simple utilities built to solve problems quickly.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Graphic Design</h3>
+            <p>Logos, social graphics, and UI mockups that make your brand look professional and modern.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Python</h3>
+            <p>Script writing, data processing, and small automation tasks using Python — quick, clean, and well-documented.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Private IT Classes</h3>
+            <p>One-on-one or small group classes covering web development basics, Python, and general computer skills. Lessons designed for all levels.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Monetization Setup</h3>
+            <p>Set up AdSense, affiliate links, donation buttons, and sponsorship pages so your site can earn while people view it.</p>
+          </article>
+        </div>
+
+        <div class="services-note">
+          <p>Want a custom package? <a href="#contact" class="link">Contact me</a> — I offer discounts for students and long-term partnerships.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section portfolio-section">
+      <div class="wrap">
+        <h2>Portfolio</h2>
+        <p class="muted">Some recent projects and experiments</p>
+
+        <div class="portfolio-grid">
+          <!-- Example cards: replace images and links with real projects -->
+          <article class="project-card">
+            <img src="images/project1.jpg" alt="Project screenshot" class="project-thumb">
+            <h4>Startup Landing</h4>
+            <p>High-converting landing page with newsletter capture and affiliate links.</p>
+            <a class="project-link" href="#">View case study →</a>
+          </article>
+
+          <article class="project-card">
+            <img src="images/project2.jpg" alt="Project screenshot" class="project-thumb">
+            <h4>E-Learning Portal (mini)</h4>
+            <p>Tutorial site monetized with respectful ads and donations.</p>
+            <a class="project-link" href="#">View case study →</a>
+          </article>
+
+          <article class="project-card">
+            <img src="images/project3.jpg" alt="Project screenshot" class="project-thumb">
+            <h4>Shop Mini</h4>
+            <p>Affiliate product list with price comparison and review snippets.</p>
+            <a class="project-link" href="#">View case study →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONSORSHIP -->
+    <section id="sponsorship" class="section sponsorship-section alt colorful-bg">
+      <div class="wrap">
+        <h2>Sponsorship & Advertising</h2>
+        <p class="muted">Promote products or support my learning — clear, ethical placements.</p>
+
+        <div class="sponsor-grid">
+          <div class="sponsor-card">
+            <h3>Hero Banner</h3>
+            <p>Top-of-page banner on high-traffic pages — perfect for launches.</p>
+            <p class="small-muted">From $49 / week</p>
+          </div>
+          <div class="sponsor-card">
+            <h3>In-Article Feature</h3>
+            <p>Native placement inside tutorials and guides with clear disclosure.</p>
+            <p class="small-muted">From $25 / post</p>
+          </div>
+          <div class="sponsor-card">
+            <h3>Newsletter Shoutout</h3>
+            <p>One-line feature to subscribers (1–2 emails / month).</p>
+            <p class="small-muted">From $15 / edition</p>
+          </div>
+        </div>
+
+        <div class="sponsor-affiliates">
+          <h4>Affiliate & Support</h4>
+          <div class="affiliate-row">
+            <a class="pill" href="https://partner.yourhost.com/?ref=YOURREF" target="_blank" rel="sponsored noopener">Hosting Partner →</a>
+            <a class="pill" href="https://www.amazon.com/dp/PRODUCTID/?tag=YOURTAG-20" target="_blank" rel="sponsored noopener">Recommended Laptop →</a>
+            <a class="pill" href="https://www.udemy.com/course/COURSEID/?couponCode=YOURCODE" target="_blank" rel="sponsored noopener">Top Course →</a>
+          </div>
+
+          <div class="donation-row">
+            <a class="btn primary" href="https://www.buymeacoffee.com/YOURNAME" target="_blank" rel="noopener">Buy Me a Coffee</a>
+            <a class="btn ghost" href="https://ko-fi.com/YOURNAME" target="_blank" rel="noopener">Ko-fi</a>
+            <a class="btn outline" href="https://github.com/sponsors/YOUR_GITHUB" target="_blank" rel="noopener">GitHub Sponsors</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="wrap contact-grid">
+        <div class="contact-left card-gloss">
+          <h2>Contact Me</h2>
+          <p class="muted">Let's talk about your project or sponsorship.</p>
+
+          <ul class="contact-info">
+            <li><strong>Email:</strong> <a href="mailto:lahaiaugustine225@gmail.com">lahaiaugustine225@gmail.com</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/23234722734" target="_blank" rel="noopener">+23234722734</a></li>
+            <li><strong>Location:</strong> Sierra Leone</li>
+          </ul>
+
+          <div class="small-muted">Prefer direct messages? Use WhatsApp for quick replies, or email me for project details and invoices.</div>
+        </div>
+
+        <form class="contact-form card-profile" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label>
+            <span class="label">Your Name</span>
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+
+          <label>
+            <span class="label">Your Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+
+          <label>
+            <span class="label">Message</span>
+            <textarea name="message" rows="6" placeholder="Tell me about your project or sponsorship idea..." required></textarea>
+          </label>
+
+          <div class="form-footer">
+            <button type="submit" class="btn primary">Send Message</button>
+            <small class="muted">I'll respond as soon as I can.</small>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <div class="brand">Augustine<span class="dot">.</span></div>
+          <p class="muted">© <span id="yr"></span> Augustine Lahai — Built with care in Sierra Leone.</p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#sponsorship">Sponsorship</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Follow</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://twitter.com/YOUR_HANDLE" target="_blank" rel="noopener">Twitter/X</a></li>
+            <li><a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+
+          <!-- rectangle ad slot -->
+          <div class="ad-rect">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="3333333333"
+                 data-ad-format="rectangle"
+                 data-full-width-responsive="false"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Consent banner -->
+  <div id="consent" class="consent">
+    <p>This site uses lightweight analytics and may show ads. No personal data is stored unless you contact or subscribe.</p>
+    <div class="consent-actions">
+      <button id="accept-consent" class="btn primary">Okay</button>
+      <a href="#contact" class="btn ghost">Contact</a>
     </div>
-  </footer>
+  </div>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // set year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // consent
+    const consentKey = 'augustine-consent';
+    if (!localStorage.getItem(consentKey)) {
+      document.getElementById('consent').classList.add('visible');
+    }
+    document.getElementById('accept-consent').addEventListener('click', () => {
+      localStorage.setItem(consentKey, '1');
+      document.getElementById('consent').classList.remove('visible');
+    });
   </script>
+
 </body>
 </html>
+
+
 
 
 
