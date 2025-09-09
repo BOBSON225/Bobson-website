@@ -1,99 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bobson's Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bobson – Web Developer | Colorful Portfolio</title>
+  <meta name="description" content="Bobson's colorful, modern portfolio with sponsorships, affiliate picks, ethical ads, and easy contact." />
+  <meta name="theme-color" content="#6a5cff" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google AdSense: replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Bobson</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li class="dropdown">
-  <a href="#projects" class="dropbtn">Projects ▾</a>
-  <ul class="dropdown-content">
-    <li><a href="#">Web Design</a></li>
-    <li><a href="#">Software</a></li>
-    <li class="dropdown">
-      <a href="#" class="dropbtn">Mobile Apps ▸</a>
-      <ul class="dropdown-content">
-        <li><a href="apps/calculator.html">Calculator</a></li>
-      </ul>
-    </li>
-  </ul>
-</li>
-
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Bobson<span>.dev</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">☰</label>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="sponsorship.html">Sponsorship</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h1>Welcome to <span>Bobson's</span> Classic Website</h1>
-    <p>A creative web designer & developer from Sierra Leone.</p>
-    <a href="#about" class="btn">Learn More</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Colorful, Welcome to Bobson's <span class="accent">Website</span></h1>
+        <p>I’m <strong>Bobson</strong>, a web developer. I build fast, attractive websites and set up ways for you to <em>earn while people view</em> — ads, sponsorships, affiliates, and donations.</p>
+        <div class="cta-row">
+          <a href="services.html" class="btn btn-primary">Hire Me</a>
+          <a href="sponsorship.html" class="btn btn-ghost">Sponsor a Placement</a>
+        </div>
+        <p class="tiny">WhatsApp: <a href="https://wa.me/23242722742" target="_blank" rel="noopener">+23242722742</a> · Email: <a href="mailto:lahaiaugustine225@gmail.com">lahaiaugustine225@gmail.com</a></p>
+      </div>
+      <div class="hero-card">
+        <img src="images/profile.jpg" alt="Bobson profile photo" class="avatar" />
+        <ul class="stats">
+          <li><span>95+</span> Projects</li>
+          <li><span>A+</span> Accessibility</li>
+          <li><span>SEO</span> Optimized</li>
+        </ul>
+        <!-- In-hero ad (responsive) -->
+        <div class="ad">
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </div>
+    </div>
+    <!-- Decorative waves -->
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,64L60,64C120,64,240,64,360,48C480,32,600,0,720,0C840,0,960,32,1080,42.7C1200,53,1320,43,1380,37.3L1440,32L1440,80L0,80Z"></path></svg>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      Hi, I’m Bobson. I hold a diploma in software and a certificate in web design.  
-      I love building websites and software that solve real problems and look professional.  
-    </p>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">🌐 Portfolio Website</div>
-      <div class="project-card">💻 Software Tools</div>
-      <div class="project-card">📱 Mobile Apps</div>
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">What I Do</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Custom Websites</h3>
+          <p>Responsive, fast, and accessible builds with clean code and on-point SEO.</p>
+        </article>
+        <article class="card">
+          <h3>Monetization Setup</h3>
+          <p>AdSense, affiliates, sponsorship pages, and donation widgets done right.</p>
+        </article>
+        <article class="card">
+          <h3>Care & Growth</h3>
+          <p>Maintenance, analytics, newsletters, and content strategy to scale.</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:lahaiaugustine225@gmail.com">lahaiaugustine225@gmail.com</a></p>
-    <p>WhatsApp: +232-034-722-734</p>
-  </section>
-  <section id="about">
-  <h2>About Me</h2>
-  <div class="about-container">
-    <img src="https://github.com/BOBSON225/Bobson-website/blob/main/images" alt="My Profile Picture" class="profile-pic">
-    <div class="about-text">
-      <p>Hello! My name is Bobson, and I am passionate about software development and web design. I enjoy building interactive websites and learning new technologies.</p>
-      
-      <h3>Skills</h3>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Python & Java</li>
-        <li>Web Design & UI/UX</li>
-      </ul>
-      
-      <h3>Interests</h3>
-      <p>I love problem solving, working on mobile apps, and helping others learn technology.</p>
-      
-      <a href="files/CV.pdf" class="btn">Download My CV</a>
+  <!-- BLOG PREVIEW -->
+  <section class="section alt">
+    <div class="container narrow">
+      <h2 class="section-title">Latest Tutorial</h2>
+      <article class="prose">
+        <h3>Deploy a Static Site on GitHub Pages</h3>
+        <p>Get your site online for free in minutes, then add analytics and ad units to start earning.</p>
+        <!-- In-article Ad -->
+        <div class="ad in-article">
+          <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="2222222222"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+        <p>Once you see traffic building, pitch sponsors using your stats and audience profile.</p>
+      </article>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- AFFILIATE + DONATIONS -->
+  <section class="section colorful">
+    <div class="container">
+      <h2 class="section-title">Recommended & Support</h2>
+      <div class="grid three">
+        <a class="pill" href="https://www.amazon.com/dp/PRODUCTID/?tag=YOURTAG-20" target="_blank" rel="sponsored noopener">Laptop for Devs →</a>
+        <a class="pill" href="https://partner.yourhost.com/?ref=YOURREF" target="_blank" rel="sponsored noopener">Affordable Hosting →</a>
+        <a class="pill" href="https://www.udemy.com/course/COURSEID/?couponCode=YOURCODE" target="_blank" rel="sponsored noopener">Web Dev Course →</a>
+      </div>
+      <div class="cta-row center">
+        <a class="btn btn-dark" href="https://www.buymeacoffee.com/YOURNAME" target="_blank" rel="noopener">Buy Me a Coffee</a>
+        <a class="btn btn-outline" href="https://ko-fi.com/YOURNAME" target="_blank" rel="noopener">Ko-fi</a>
+        <a class="btn btn-primary" href="https://github.com/sponsors/YOUR_GITHUB" target="_blank" rel="noopener">GitHub Sponsors</a>
+      </div>
+    </div>
+  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Bobson. All rights reserved.</p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand">Bobson<span>.dev</span></div>
+        <p class="muted">© <span id="year"></span> Bobson. Built with performance and accessibility in mind.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="list">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="sponsorship.html">Sponsorship</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="list">
+          <li><a href="mailto:lahaiaugustine225@gmail.com">lahaiaugustine225@gmail.com</a></li>
+          <li><a href="https://wa.me/23242722742" target="_blank" rel="noopener">WhatsApp: +23242722734</a></li>
+        </ul>
+        <!-- Sidebar ad -->
+        <div class="ad rectangle">
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="3333333333" data-ad-format="rectangle" data-full-width-responsive="false"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
+
 
 
 
